@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+                margin: 0;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: burlywood;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: bisque;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+            }
+            .topnav a{
+                float:left;
+                color:blue;
+                text-align: center;
+                 padding: 25px 15px ; 
+                text-decoration:solid;
+                font-size: 15px;
+                display: block;
+                text-decoration: none;
+            }
+            .topnav a.active{
+                background-color: rgb(255, 248, 220);
+                color:rgba(165, 42, 42, 0.619);
+            }
+            .topnav a:hover{
+                background-color: rgba(19, 98, 88, 0.878);
+                color: white;
+            }
+            .topnav input[type=text] {
+  float: right;
+  padding: 10px;
+  margin-top: 8px;
+  margin-right: 10px;
+  border: none;
+  font-size: 10px;
+            }
+            .center{
+                background-color: #7812b3;
+                text-align: center;
+                font-size: 30px;
+                color:aquamarine;
+
+            }
+           button{
+            float:right;
+            background-color: #04AA6D;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 5px;
+  border: none;
+           }
+           input{
+            padding:14px 20px;
+            margin: 8px 0;
+           }
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+
+}
+
+
+
+
+/* Caption text */
+.text {
+  color:orange;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 100%;
+  font-size: 30px;
+  padding: 12px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-left: 250px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1500px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.heading{
+    background-color: antiquewhite;
+    margin-top: 0px;
+    font-size: 30px;
+    color:mediumslateblue;
+
+
+}
+.dropdown{
+    display: inline-block; 
+                text-decoration:solid;
+                
+                font-size: 15px;
+                margin-top:15px;
+                color:blue;
+                display: inline-block;
+              padding: 10px 15px;
+                
+}
+.footer
+{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 300px;
+    font-size: 20px;
+    background-color: blue;
+    color: aliceblue;
+  
+}
+.copy-tight{
+  text-align: center;
+  background-color: mediumseagreen;
+  font-size: 40px;
+  margin-top: 20px;
+  
+}
+.right{
+  margin-left: 20px;
+  float:right;
+  margin-top: 100px;
+  transition: width 2s, height 4s;
+}
+.rleft
+{
+  float:left;
+  margin-top:200px;
+ 
+}
+.lright{
+  float:right;
+  margin-top:150px;
+  /* margin-left: 100%; */
+
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.lefttext{
+  text-align: right;
+  margin-top: 20%;
+}
+.lefttext1{
+ margin-right: 10px;
+  margin-left: 600px;
+  margin-top: -300px;
+  
+
+
+}
+.righttext1{
+  margin-top: 200px;
+}
+.righttext
+{
+text-align: left;
+margin-right: 80px;
+margin-top: 300px;
+font-style: bold;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: mediumslateblue;
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px;
+  margin: 0 auto; */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active"
+        href="#home">Home </a>
+        <a href="#">Events</a>
+        <a href="#">Venues</a>
+        <a href="#">Booking</a>
+        <a href="about.html">About US</a>
+        <div class="dropdown"> 
+          <label for="Budget">BUDGET</label>
+    <select name="BUGEGT">Budegt</option>
+    <option value="10 LAKH">10 LAKH</option>
+    <option value="15 LAKH">15 LAKH</option>
+    <option value="50 LAKH">50 LAKH</option>
+    <option value="1 CR OR ABOVE">1 CR OR ABOVE</option>
+    </select>
+    </div>
+        <input type="text" placeholder="Search..">
+        <button type="LOGIN">LOGIN/REGISTER</button>
+        
+    </div><br>
+    <div class="heading">
+        <marquee><b>YOUR ONE WAY DESTINATION FOR EVERYTHING</b></marquee>
+       
+    </div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="C:\Users\Manshi garg\Documents\wedding planner\mandap.jpeg" style="width:152%">
+  <div class="text">Elegant  Mandaps</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="C:\Users\Manshi garg\Desktop\wed event.jpg" style="width:152%">
+  <div class="text">Beautiful Dining Area</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\Manshi garg\Desktop\wed event2.jpg" style="width:152%">
+  <div class="text">Wedding hall with customised decoration</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div><br>
+<h2>We deals in</h2>
+<div class="left">
+  <img src="C:\Users\Manshi garg\Documents\Certificates\Indian weddings.jpg"height="400px" width="500px" class="zoom">
+  
+</div>
+<div class="lefttext1">
+  <h3>Indian weddings are a vibrant fusion of love, tradition, and culture, celebrated with grandeur and heartfelt rituals. Each ceremony reflects the diverse heritage of India, featuring colorful attire, soulful music, and delectable cuisine. From the sacred vows exchanged during the rituals to the joyous festivities like Mehndi and Sangeet, every moment is steeped in meaning and celebration. An Indian wedding is not just an event but a lifetime memory, uniting families and weaving together timeless traditions with modern-day elegance.
+</h3>
+</div>
+<br>
+
+
+<div class="right">
+  <img src="C:\Users\Manshi garg\Documents\Certificates\Christians weddings.jpg" height="400px" width="500px" class="zoom">
+  
+</div>
+<div class="righttext1">
+<h3>Christian weddings are a beautiful celebration of love, unity, and faith. Rooted in sacred traditions, the ceremony often takes place in a church, with heartfelt vows exchanged before God and loved ones. The bride's radiant white gown symbolizes purity, while hymns and prayers bless the union. With timeless rituals like the exchange of rings and the lighting of the unity candle, Christian weddings create a deeply spiritual and emotional experience, marking the beginning of a lifelong journey together.
+
+
+</h3>
+</div><br>
+<div class="rleft">
+  <img src="C:\Users\Manshi garg\Documents\Certificates\Muslim weddings.jpg" height="400px" width="500px" class="zoom">
+
+</div>
+<div class="lefttext">
+<h3>Muslim weddings, known as Nikah, are a harmonious blend of spirituality, tradition, and joy. Rooted in Islamic customs, the ceremony is officiated by a Qazi (religious officiant) and involves the recitation of the Nikah Nama (marriage contract), with mutual consent from the bride and groom. Festivities often include pre-wedding events like Mehndi and grand feasts such as Walima to celebrate the union with family and friends. Muslim weddings beautifully reflect love, commitment, and the essence of community while adhering to the sacred principles of Islam.</h3>
+</div>
+<br>
+<div class="lright">
+  <img src="C:\Users\Manshi garg\Documents\Certificates\sikh weddings.jpg" height="400px" width="500px" class="zoom">
+</div>
+<div class="righttext">
+  <h3>In the sacred bond of Anand Karaj, the journey of two becomes a shared path toward eternal bliss.
+  "A Sikh wedding is not just the union of two hearts but a spiritual connection in the presence of Waheguru."</h3>
+</div><br>
+
+    <!-- footer -->
+ <div class="footer">
+  <b>"Why Choose us?"</b>  
+  <br>
+
+ <b> At our site, we believe your wedding day should be as unique as your love story. Here's we take proper care of your dreams which is highly
+    needed to be come true at a very affordable cost. Our main focus is making your special day more special! YOUR HAPPINESS OUR PRIORITY!!</b>
+<br>
+<bold> Ready to bring your dream wedding to life?
+    Contact us today, and let's start planning your perfect day!
+    
+
+</bold>
+</div>
+<br>
+<div class="copy-tight">
+ <b>&copy Contact us and make your day memorable!</b>
+</div> 
+ 
+
+
+
+
+
+
+
+
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  </script>
+  
+</body>
+</html> 
