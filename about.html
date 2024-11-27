@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+                margin: 0;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: lightpink;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: wheat;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+            }
+            .topnav a{
+                float:left;
+                color:blue;
+                text-align: center;
+                padding: 25px 15px ;
+                text-decoration:solid;
+                font-size: 15px;
+                display: block;
+                text-decoration: none;
+            }
+            .topnav a.active{
+                background-color: rgb(255, 248, 220);
+                color:rgba(165, 42, 42, 0.619);
+            }
+            .topnav a:hover{
+                background-color: rgba(19, 98, 88, 0.878);
+                color: white;
+            }
+            .topnav input[type=text] {
+  float:inline-end;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  font-size: 10px;
+            }
+            .center{
+                background-color: #7812b3;
+                text-align: center;
+                font-size: 30px;
+                color:aquamarine;
+
+            }
+           button{
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            height:40%
+           width: 40%;
+           float:right;
+           padding: 10px 10px;
+          margin: 8px 5px;
+
+           }
+           input{
+            padding:14px 20px;
+            margin: 8px 0;
+           }
+           .dropdown {
+   display: inline-block;
+              padding: 10px 15px;
+                text-decoration:solid;
+                font-size: 15px;
+                margin-top:15px;
+                color:blue;
+           }
+          .
+.heading{
+    background-color: antiquewhite;
+    margin-top: 0px;
+    font-size: 20px;
+    color:#04AA6D;
+
+
+}
+.class1{
+    float:right;
+    margin-top: 50px;
+}
+.img{
+    filter:blur(1px);
+  position: relative;
+  text-align: center;
+ 
+  
+}
+.bottom-left {
+ 
+ position: absolute;
+bottom: 50%;
+
+ font-size: 50px;
+ text-align: center;
+ margin-left: 100px;
+ margin-top: 200px ;
+ padding: 5px;
+color:black;
+font-family: 'Times New Roman', Times, serif;
+animation: zoom 5s ease-in-out infinite;
+
+}
+@keyframes zoom {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+         
+
+ image
+ div.gallery {
+  border: 1px solid #ccc;
+
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+} 
+
+ div.gallery img {
+  width: 100%;
+  height: auto;
+} 
+
+ div.desc {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+} 
+
+ *{
+  box-sizing: border-box;
+}
+
+.responsive {
+    margin-top: 50px;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin-left:90px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.zoom-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .gallery:hover .zoom-image {
+            transform: scale(1.2); Adjust the scale factor for zoom
+        }
+         /* .gallery:hover.overlay{
+          width:100%;
+        } */
+          /* color: white;
+          bottom:0;
+  font-size: 20px;
+  position: absolute;
+  top: 100%;.desc{
+        
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+        } */
+        
+/* .gallery:hover.overlay{
+  width:100%;
+} 
+ */
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active"
+        href="new.html">Home </a>
+        <a href="#">Events</a>
+        <a href="#">Venues</a>
+        <a href="#">Booking</a>
+        <a href="#About">About US</a>
+    
+       <div class="dropdown"> 
+        <label for="Budget">BUDGET</label>
+<select name="BUGEGT">Budegt</option>
+<option value="10 LAKH">10 LAKH</option>
+<option value="15 LAKH">15 LAKH</option>
+<option value="50 LAKH">50 LAKH</option>
+<option value="1 CR OR ABOVE">1 CR OR ABOVE</option>
+</div>
+
+
+</select>
+<div class="class1">
+        <input type="text" placeholder="Search..">
+        <button type="LOGIN">LOGIN/REGISTER</button>
+</div>
+    </div><br>
+    <div class="heading">
+        <marquee><em>YOUR ONE WAY DESTINATION FOR EVERYTHING</em></marquee>
+       
+    </div>
+    </div>
+   <div class="img"> 
+    
+    <img src="C:\Users\Manshi garg\Documents\Certificates\beautiful-blur-bridal-256737.jpg" width="1500" height="400">
+   </div>
+    <div class="bottom-left">REAL TESTIMONIALS
+      <br>
+      hear from Our Happy couples!!
+    </div>
+   </div>
+   <div class="responsive">
+    <div class="gallery">
+     <img src="C:\Users\Manshi garg\Documents\Certificates\Ayush-Kirtika.jpg" alt="Cinque Terre" width="600" height="400" class="zoom-image">
+ 
+            <div class="overlay">
+                        <div class="desc"></div>
+      </div>
+    </div>
+  </div>
+   </div>
+  
+  
+  <div class="responsive">
+    
+      <div class="gallery">
+        <img src="C:\Users\Manshi garg\Documents\Certificates\Harshita-Shresth.jpg" alt="Forest" width="600" height="400"class="zoom-image">
+     <div class="overlay">
+      <div class="desc"></div>
+    
+  </div>
+  <!-- <div class="responsive">
+    
+    <div class="gallery">
+      <img src="C:\Users\Manshi garg\Documents\Certificates\Harshita-Shresth.jpg" alt="Forest" width="600" height="400"class="zoom-image">
+   <div class="overlay">
+    <div class="desc">Add a description of the image here</div>
+  
+</div> -->
+  
+  <!-- <div class="responsive">
+    <div class="gallery">
+      
+        <img src="C:\Users\Manshi garg\Documents\Certificates\AmitShukla-Sanjana.jpg" alt="Northern Lights" width="600" height="400"class="zoom-image">
+  <div class="overlay">
+      <div class="desc">Add a description of the image here</div>
+    </div> 
+    </div> -->
