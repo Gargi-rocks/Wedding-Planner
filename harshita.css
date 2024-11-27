@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Pc7xGAVWfi_72Y2Z5f49KzfENvFNM2w73A&s");*/
+    position: absolute;
+    height:100%;
+    width: 100%;
+    
+    color: #06462e;
+    scroll-behavior: ;
+}
+
+/* Header */
+header {
+    background: #4c0f26;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(199, 206, 222);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #db8f96;
+}
+#services ul{list-style-type: circle;}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url("https://v3events.in/blog/wp-content/uploads/2020/10/Wedding-Planner-1.jpg");
+    opacity:1;
+    color: white;
+}
+
+.banner .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffcccb;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background: #f9b3ca;
+    color: rgb(205, 85, 85);
+}
+
+/* Form */
+form {align:center;}
+form button {
+    background: #650424;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+    background: #dc749e;
+}
+#contact{background-color: rgb(163, 29, 52);}
